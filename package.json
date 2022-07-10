@@ -2,7 +2,7 @@
   "name": "trailer-movies-watch",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vladimirsaenko.github.io/trailer-movies-watch ",
+  "homepage": "https://vladimirsaenko.github.io/trailer-movies-watch/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
