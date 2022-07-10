@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background: #090A0E;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: 15px;
+  justify-items: center;
+  background-color: #1a1c23;
+  padding: 15px 15px 50px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Movie */
+
+.movie-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.movie-cover {
+  width: 100%;
+  transition: 0.2s;
+}
+
+.movie-container:hover .movie-cover {
+  border: 5px solid #a0acdf;
+}
+
+.movie-title {
+  padding-top: 5px;
+  font-size: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.movie-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #0F1014;
+  background: #c1c1c1;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.movie-vote {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #0F1014;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  min-height: 500px;
+  object-fit: cover;
+  background-position: top center;
+  /* background-position: center; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0px 15px 60px;
+  background-size: cover;
+}
+
+.hero .title {
+  font-size: 72px;
+}
+
+.hero .overview {
+  background: #00000066;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hero .button {
+  background: #0F1014;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white; 
+  /* Сплоная, это как? В форме слоника?) */
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hero .button:hover {
+  background: #a0acdf;
+  color: #0F1014;
+}
+
+.youtube-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.btn-load-more {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: rotateX(-50%);
+  color: white;
+  background: black;
+}
+
+.page-type-current {
+  border: 3px solid red;
+}
+
+button {
+  color: white;
+  cursor: pointer;
+  background: #17181e;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin: 50px;
+  transition: 0.2s;
+}
+
+button:hover {
+  color: #17181e;
+  background: white;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  
 }
