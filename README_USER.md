@@ -16,7 +16,7 @@
 - Поиск фильмов/сериалов
 - Самые рейтинговые, популярные и предстоящие фильмы
 
-## Authors
+## Authors/Авторы 
 
 - [@witcherwow240](https://www.github.com/VladimirSaenko)
 - [@AlexanderKhapchenko](https://github.com/AlexanderKhapchenko)
