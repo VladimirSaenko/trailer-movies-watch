@@ -88,8 +88,8 @@ body {
   position: relative;
   min-height: 500px;
   object-fit: cover;
-  background-position: top center;
-  /* background-position: center; */
+  /* background-position: top center; */
+  background-position: center;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -161,72 +161,73 @@ button:hover {
 }
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
-  .page-type-current, button {
-    padding: 10px 15px;
-  }
+.page-type-current, button {
+  padding: 10px 15px;
+}
 
-  .App {
-    overflow: hidden;
-  }
+.App {
+  overflow: hidden;
+}
 
-  .hero .button {
-    padding: 15px 15px;
-  }
+.hero .button {
+  padding: 15px 15px;
+}
 
-  .header form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 5px 5px;
-  }
+.header form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 5px;
+}
 
-  .header h1 {
-    font-size: 50px;
-  }
+.header h1 {
+  font-size: 50px;
+}
 
-  .header form input {
-    margin-right: 35px;
-    position: relative;
-    top: 20px;
-    height: 25px;
-    font-size: 15px;
-  }
+.header form input {
+  margin-right: 35px;
+  position: relative;
+  top: 20px;
+  height: 25px;
+  font-size: 15px;
+}
 
-  .search {
-    padding: 20px;
-    font-size: 25px;
-  }
+.search {
+  padding: 20px;
+  font-size: 25px;
+}
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .content .button {
-    position: absolute;
-    bottom: -35px !important;
-  }
+.content .button {
+  position: absolute;
+  bottom: -35px !important;
+}
 
-  .hero .title {
-    text-align: center;
-    font-size: 55px;
-    text-shadow: 2px 2px 1px black;
-  }
+.hero .title {
+  text-align: center;
+  font-size: 55px;
+  text-shadow: 2px 2px 1px black;
+}
 
-  .btn-load-more {
-    left: 15%;
-    bottom: -50px;
-  }
+.btn-load-more {
+  left: 15%;
+  bottom: -50px;
+}
 
-  .movie-title {
-    font-size: 30px;
-  }
+.movie-title {
+  font-size: 30px;
+}
 
-  .movie-vote {
-    padding: 5px 5px;
-    font-size: 30px;
-  }
+.movie-vote {
+  padding: 5px 5px;
+  font-size: 30px;
+}
+
 }
